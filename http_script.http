@@ -1,0 +1,25 @@
+### 팀 생성
+POST http://localhost:8080/api/v1/teams
+Content-Type:  application/json
+
+{
+"name" :"test"
+}
+
+### 팀 모두 조회
+GET http://localhost:8080/api/v1/teams?name=test
+### 유저 생성
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "이름",
+  "age": 23 ,
+  "teamId": 1
+}
+### 유저 하나 조회
+GET http://localhost:8080/api/v1/users/2
+
+### 유저 이름으로 조회
+GET http://localhost:8080/api/v1/users?name=이름
